@@ -1,0 +1,77 @@
+object fLoadSettings: TfLoadSettings
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 495
+  ClientWidth = 773
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Bottom
+    Position.Y = 448.000000000000000000
+    Size.Width = 773.000000000000000000
+    Size.Height = 47.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Button1: TButton
+      Anchors = [akRight, akBottom]
+      Cancel = True
+      ModalResult = 2
+      Position.X = 680.000000000000000000
+      Position.Y = 15.000000000000000000
+      TabOrder = 0
+      Text = #1054#1090#1084#1077#1085#1072
+    end
+    object bOk: TButton
+      Anchors = [akRight, akBottom]
+      Default = True
+      ModalResult = 1
+      Position.X = 592.000000000000000000
+      Position.Y = 15.000000000000000000
+      TabOrder = 1
+      Text = #1054#1082
+    end
+  end
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 773.000000000000000000
+    Size.Height = 448.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object pTryCnt: TPanel
+      Align = Top
+      Size.Width = 773.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lbTryCnt: TLabel
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 481.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1087#1086#1074#1090#1086#1088#1086#1074' '#1087#1088#1080' '#1086#1096#1080#1073#1082#1072#1093' '#1089#1074#1103#1079#1080
+        TabOrder = 0
+      end
+      object sbTryCnt: TSpinBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akTop, akRight]
+        TabOrder = 3
+        Cursor = crIBeam
+        Min = 1.000000000000000000
+        Max = 10.000000000000000000
+        Value = 3.000000000000000000
+        Position.X = 488.000000000000000000
+        Position.Y = 6.000000000000000000
+        Size.Width = 276.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

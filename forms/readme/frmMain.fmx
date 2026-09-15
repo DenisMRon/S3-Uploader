@@ -1,0 +1,246 @@
+object fMain: TfMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 670
+  ClientWidth = 692
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 692.000000000000000000
+    Size.Height = 670.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      692s
+      644s
+      692s
+      644s
+      692s
+      644s)
+    object tiSettings: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 80.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #1053'a'#1089#1090#1088#1086#1081#1082#1080
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object pMain: TPanel
+        Align = Client
+        Size.Width = 692.000000000000000000
+        Size.Height = 644.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object bAddFile: TButton
+          Anchors = [akRight, akBottom]
+          Position.X = 480.000000000000000000
+          Position.Y = 608.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1044#1086#1073#1072#1074#1080#1090#1100' '#1092#1072#1081#1083
+          OnClick = bAddFileClick
+        end
+        object bAddFolder: TButton
+          Anchors = [akRight, akBottom]
+          Position.X = 576.000000000000000000
+          Position.Y = 608.000000000000000000
+          Size.Width = 105.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = #1044#1086#1073#1072#1074#1080#1090#1100' '#1087#1072#1087#1082#1091
+          OnClick = bAddFolderClick
+        end
+        object lbLoads: TListBox
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 8.000000000000000000
+          Position.Y = 96.000000000000000000
+          Size.Width = 676.000000000000000000
+          Size.Height = 497.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 672.000000000000000000
+          Viewport.Height = 493.000000000000000000
+        end
+        object sbTryCnt: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akTop, akRight]
+          TabOrder = 4
+          Cursor = crIBeam
+          Min = 1.000000000000000000
+          Max = 10.000000000000000000
+          Value = 3.000000000000000000
+          Position.X = 576.000000000000000000
+          Position.Y = 24.000000000000000000
+        end
+        object lbDefaultTryCnt: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 24.000000000000000000
+          Size.Width = 545.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1087#1086#1074#1090#1086#1088#1086#1074' '#1087#1086' '#1091#1084#1086#1083#1095#1072#1085#1080#1102
+          TabOrder = 6
+        end
+        object sbThreadCnt: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akTop, akRight]
+          TabOrder = 3
+          Cursor = crIBeam
+          Min = 1.000000000000000000
+          Max = 10.000000000000000000
+          Value = 5.000000000000000000
+          Position.X = 576.000000000000000000
+          Position.Y = 48.000000000000000000
+          OnChange = sbThreadCntChange
+        end
+        object lThreadCount: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 16.000000000000000000
+          Position.Y = 48.000000000000000000
+          Size.Width = 545.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1087#1086#1090#1086#1082#1086#1074
+          TabOrder = 5
+        end
+      end
+    end
+    object tiLoads: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 69.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #1047#1072#1075#1088#1091#1079#1082#1080
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object gLoads: TGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 692.000000000000000000
+        Size.Height = 608.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        RowCount = 0
+        OnGetValue = gLoadsGetValue
+        OnCellClick = gLoadsCellClick
+        Viewport.Width = 688.000000000000000000
+        Viewport.Height = 583.000000000000000000
+        object scName: TStringColumn
+          Header = #1053#1072#1079#1074#1072#1085#1080#1077
+          Size.Width = 193.000000000000000000
+        end
+        object scSize: TStringColumn
+          Header = #1056#1072#1079#1084#1077#1088
+        end
+        object pcProgress: TProgressColumn
+          Header = #1055#1088#1086#1075#1088#1077#1089#1089
+        end
+        object scStatus: TStringColumn
+          Header = #1057#1090#1072#1090#1091#1089
+        end
+        object scTime: TStringColumn
+          Header = #1042#1088#1077#1084#1103
+        end
+      end
+      object pStart: TPanel
+        Align = Bottom
+        Position.Y = 608.000000000000000000
+        Size.Width = 692.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object bStart: TButton
+          Anchors = [akTop, akRight]
+          Enabled = False
+          Position.X = 515.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 0
+          Text = #1047#1072#1075#1088#1091#1079#1080#1090#1100
+          OnClick = bStartClick
+        end
+        object bStop: TButton
+          Anchors = [akTop, akRight]
+          Enabled = False
+          Position.X = 604.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 1
+          Text = #1054#1089#1090#1072#1085#1086#1074#1080#1090#1100
+          OnClick = bStopClick
+        end
+      end
+    end
+    object tiHistory: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 67.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #1048#1089#1090#1086#1088#1080#1103
+      ExplicitSize.cx = 67.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object lbHistory: TListBox
+        Align = Left
+        Size.Width = 321.000000000000000000
+        Size.Height = 644.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = lbHistoryChange
+        Viewport.Width = 317.000000000000000000
+        Viewport.Height = 640.000000000000000000
+      end
+      object lbHistoryItems: TListBox
+        Align = Client
+        Size.Width = 371.000000000000000000
+        Size.Height = 644.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 367.000000000000000000
+        Viewport.Height = 640.000000000000000000
+      end
+    end
+  end
+  object odAdd: TOpenDialog
+    Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist, ofEnableSizing]
+    Left = 16
+    Top = 34
+  end
+end
