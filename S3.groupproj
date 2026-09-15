@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{616ED06A-967D-48AB-B742-365130D40E22}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="S3_MultiUploader.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Test\S3_MultiUploaderTests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="S3_MultiUploader">
+        <MSBuild Projects="S3_MultiUploader.dproj"/>
+    </Target>
+    <Target Name="S3_MultiUploader:Clean">
+        <MSBuild Projects="S3_MultiUploader.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S3_MultiUploader:Make">
+        <MSBuild Projects="S3_MultiUploader.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S3_MultiUploaderTests">
+        <MSBuild Projects="Test\S3_MultiUploaderTests.dproj"/>
+    </Target>
+    <Target Name="S3_MultiUploaderTests:Clean">
+        <MSBuild Projects="Test\S3_MultiUploaderTests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S3_MultiUploaderTests:Make">
+        <MSBuild Projects="Test\S3_MultiUploaderTests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="S3_MultiUploader;S3_MultiUploaderTests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="S3_MultiUploader:Clean;S3_MultiUploaderTests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="S3_MultiUploader:Make;S3_MultiUploaderTests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
