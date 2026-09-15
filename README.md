@@ -50,5 +50,5 @@
 Адрес: https://s3.bazissoft.ru
 Бакет: recruiting
 Пользователь: candidate
-Пароль: OS0jIQ{SS6
+Пароль: ********
 Регион: ru-central
