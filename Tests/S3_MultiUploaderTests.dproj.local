@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.206,=C:\TEst\Delphi\S3 MultiUploader\common\IEvent.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.689,=C:\TEst\Delphi\S3 MultiUploader\Load\Internal\model.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.999,=C:\TEst\Delphi\S3 MultiUploader\Load\Internal\IHistoryValue.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.084,=C:\TEst\Delphi\S3 MultiUploader\Load\Internal\ILoadValue.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.726,=C:\TEst\Delphi\S3 MultiUploader\common\IListObj.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.436,=C:\TEst\Delphi\S3 MultiUploader\common\IEventObject.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.693,=C:\TEst\Delphi\S3 MultiUploader\common\IList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.935,=C:\TEst\Delphi\S3 MultiUploader\Load\Internal\interfaces.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.947,=C:\TEst\Delphi\S3 MultiUploader\Test\TestILoadObject.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.405,=C:\distr\aws_sdk_delphi\aws-sdk-delphi-master\Source\Core\AWS.SDKUtils.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.032,=C:\TEst\Delphi\S3 MultiUploader\Load\Internal\ILoadMAnagerValue.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.420,=C:\TEst\Delphi\S3 MultiUploader\Load\Internal\objects\ILoadObject.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.849,=C:\TEst\Delphi\S3 MultiUploader\Load\Internal\ISetingsValue.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.715,=C:\TEst\Delphi\S3 MultiUploader\Load\Internal\objects\ISettingsObject.pas</Transaction>
+  </Transactions>
+</BorlandProject>
